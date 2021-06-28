@@ -40,13 +40,13 @@ class Timer {
     stopTimer(time) {
         if (time <= 0) {
             clearInterval(this.timers);
-            $timer.textContent = 'Did you meet the deadline?';
+            $timer.textContent = 'Time is up';
         }
     }
 }
 
 const timer = new Timer({
-    onTick: setClock, selector: '#timer-1', deadline: new Date('Jun 29, 2021'),
+    onTick: setClock, selector: '#timer-1', deadline: new Date('jul 08, 2021'),
 });
 timer.start();
 
